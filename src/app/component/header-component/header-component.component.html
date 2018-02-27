@@ -1,0 +1,155 @@
+<!--header-->
+<div class="header">
+	<div class="header-top">
+		<div class="container">
+		<div class="col-sm-4 world">
+					
+				</div>
+				<div class="col-sm-4 logo">
+					<a ><img src="assets/images/logo.png" alt=""></a>	
+				</div>
+		
+			<div class="col-sm-4 header-left">		
+					<p class="log"><a [routerLink]="['/account']"  >Login</a>
+						<span>or</span><a [routerLink]="['/register']"  >Signup</a></p>
+					
+					<div class="clearfix"> </div>
+			</div>
+				<div class="clearfix"> </div>
+		</div>
+		</div>
+		<div class="container">
+			<div class="head-top">
+				<div class="col-sm-2 number">
+					<span><i class="glyphicon glyphicon-phone"></i>9445401205</span>
+				</div>
+		 <div class="col-sm-8 h_menu4">
+				<ul class="memenu skyblue">
+					  <li class=" grid"><a  href="index.html" >Home</a></li>	
+				      <li><a   (click)="showMenMenuList()" (mouseover)="showMenMenuList()" (mouseout)="hideMenMenuList()">Men</a>
+				    <div class="mepanel" *ngIf="showMenmenu">
+						<div class="row">
+							<div class="col1">
+								<div class="h_nav">
+									<h4>All Clothing</h4>
+									<ul>
+										<li><a [routerLink]="['/prodcuts']" >Shirts</a></li>
+										<li><a [routerLink]="['/prodcuts']">Sports Wear</a></li>
+										<li><a [routerLink]="['/prodcuts']">Shorts</a></li>
+										<li><a [routerLink]="['/prodcuts']">Suits & Blazers</a></li>
+										<li><a [routerLink]="['/prodcuts']">Formal Shirts</a></li>
+										<li><a [routerLink]="['/prodcuts']">Sweatpants</a></li>
+										<li><a [routerLink]="['/prodcuts']">Swimwear</a></li>
+										<li><a [routerLink]="['/prodcuts']">Trousers & Chinos</a></li>
+										<li><a [routerLink]="['/prodcuts']">T-Shirts</a></li>
+										<li><a [routerLink]="['/prodcuts']">Underwear & Socks</a></li>
+										
+									</ul>	
+								</div>							
+							</div>
+							<div class="col1">
+								<div class="h_nav">
+									<h4>Footwear</h4>
+									<ul>
+										<li><a [routerLink]="['/prodcuts']">Formal Shoes</a></li>
+										<li><a [routerLink]="['/prodcuts']">Boots</a></li>
+										<li><a [routerLink]="['/prodcuts']">Sports Shoes</a></li>
+										<li><a [routerLink]="['/prodcuts']">Casual Shoes</a></li>
+										<li><a [routerLink]="['/prodcuts']">Running Shoes</a></li>
+										<li><a [routerLink]="['/prodcuts']">Sneakers</a></li>
+										<li><a [routerLink]="['/prodcuts']">Loafers</a></li>
+										<li><a [routerLink]="['/prodcuts']">Slippers</a></li>
+										<li><a [routerLink]="['/prodcuts']">Sandals</a></li>
+										<li><a [routerLink]="['/prodcuts']">Flip-flops</a></li>
+									
+									</ul>	
+								</div>							
+							</div>
+							<div class="col1">
+								<div class="h_nav">
+									<h4>Popular Brands</h4>
+									<ul>
+										<li><a [routerLink]="['/prodcuts']">Levis</a></li>
+										<li><a [routerLink]="['/prodcuts']">Persol</a></li>
+										<li><a [routerLink]="['/prodcuts']">Nike</a></li>
+										<li><a [routerLink]="['/prodcuts']">Edwin</a></li>
+										<li><a [routerLink]="['/prodcuts']">New Balance</a></li>
+										<li><a [routerLink]="['/prodcuts']">Jack & Jones</a></li>
+										<li><a [routerLink]="['/prodcuts']">Paul Smith</a></li>
+										<li><a [routerLink]="['/prodcuts']">Ray-Ban</a></li>
+										<li><a [routerLink]="['/prodcuts']">Wood Wood</a></li>
+									</ul>	
+								</div>												
+							</div>
+						  </div>
+						</div>
+					</li>
+				    <li class="grid"><a  (click)="showWomenList()" (mouseover)="showwoMenMenuList()" (mouseout)="hideWoMenMenuList()">	Women</a>
+					  	<div class="mepanel" *ngIf="showWoMenmenu">
+						<div class="row">
+							<div class="col1">
+								<div class="h_nav">
+									<h4>All Clothing</h4>
+									<ul>
+										<li><a [routerLink]="['/prodcuts']">Shirts & Tops</a></li>
+										<li><a [routerLink]="['/prodcuts']">Sports Wear</a></li>
+										<li><a [routerLink]="['/prodcuts']">Kurtas & Kurties</a></li>
+										<li><a [routerLink]="['/prodcuts']">Suits & Blazers</a></li>
+										<li><a [routerLink]="['/prodcuts']">Sarees</a></li>
+										<li><a [routerLink]="['/prodcuts']">Sweatpants</a></li>
+										<li><a [routerLink]="['/prodcuts']">Swimwear</a></li>
+										<li><a [routerLink]="['/prodcuts']">Night-Suits</a></li>
+										<li><a [routerLink]="['/prodcuts']">T-Shirts</a></li>
+										<li><a [routerLink]="['/prodcuts']">Jeans</a></li>
+										
+									</ul>	
+								</div>							
+							</div>
+							<div class="col1">
+								<div class="h_nav">
+									<h4>Footwear</h4>
+									<ul>
+										<li><a [routerLink]="['/prodcuts']">Heels</a></li>
+										<li><a [routerLink]="['/prodcuts']">Flats</a></li>
+										<li><a [routerLink]="['/prodcuts']">Sports Shoes</a></li>
+										<li><a [routerLink]="['/prodcuts']">Casual Shoes</a></li>
+										<li><a [routerLink]="['/prodcuts']">Running Shoes</a></li>
+										<li><a [routerLink]="['/prodcuts']">Wedges</a></li>
+										<li><a [routerLink]="['/prodcuts']">Boots</a></li>
+										<li><a [routerLink]="['/prodcuts']">Pumps</a></li>
+										<li><a [routerLink]="['/prodcuts']">Slippers</a></li>
+										<li><a [routerLink]="['/prodcuts']">Flip-flops</a></li>
+									
+									</ul>
+								</div>							
+							</div>
+							<div class="col1">
+								<div class="h_nav">
+									<h4>Popular Brands</h4>
+									<ul>
+										<li><a [routerLink]="['/prodcuts']">Levis</a></li>
+										<li><a [routerLink]="['/prodcuts']">Persol</a></li>
+										<li><a [routerLink]="['/prodcuts']">Nike</a></li>
+										<li><a [routerLink]="['/prodcuts']">Edwin</a></li>
+										<li><a [routerLink]="['/prodcuts']">New Balance</a></li>
+										<li><a [routerLink]="['/prodcuts']">Jack & Jones</a></li>
+										<li><a [routerLink]="['/prodcuts']">Paul Smith</a></li>
+										<li><a [routerLink]="['/prodcuts']">Ray-Ban</a></li>
+										<li><a [routerLink]="['/prodcuts']">Wood Wood</a></li>
+									</ul>	
+								</div>												
+							</div>
+						  </div>
+						</div>
+			    </li>
+				
+			  </ul> 
+			</div>
+				<div class="col-sm-2 search">		
+			<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a>
+		</div>
+		<div class="clearfix"> </div>
+			
+		</div>
+	</div>
+</div>

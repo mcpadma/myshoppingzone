@@ -1,0 +1,44 @@
+<!--//header-->
+<div class="container">
+	<div class="register">
+		<h1>Register</h1>
+		  	  <form #form="ngForm" (ngSubmit) = "onSubmitAddUserDetails(form.value); form.reset()"> 
+				 <div class="col-md-6  register-top-grid">
+					
+					<div class="mation" class = "form-group">
+						<span>First Name</span>
+						<div class = "form-group">
+						<input type="text" class="form-control" required name ="fullName" ngModel> 
+						</div>
+						<span>Last Name</span>
+						<input type="text" class="form-control" name ="fullName" ngModel> 
+					 
+						 <span>Email Address</span>
+						 <input type="email" class="form-control" required name ="email" ngModel> 
+					</div>
+					 <div class="clearfix"> </div>
+					   <a class="news-letter" href="#">
+						 <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Sign Up</label>
+					   </a>
+					 </div>
+				     <div class=" col-md-6 register-bottom-grid">
+						   
+							<div class="mation" class = "form-group">
+								<span>Password</span>
+								<input type="password" class="form-control" required name ="password" ngModel>
+								<span>Confirm Password</span>
+								<input type="password" class="form-control" name ="password" ngModel>
+							</div>
+					 </div>
+					 <div class="clearfix"> </div>
+					 <button type= "submit" class="btn btn-success">Submit</button>
+				</form>
+				
+				<div class="register-but">
+				   <form>
+					   <input type="submit" value="submit">
+					   <div class="clearfix"> </div>
+				   </form>
+				</div>
+		   </div>
+</div>
