@@ -20,9 +20,11 @@ router.get('/datas',function(req,res){
     console.log('get request for all datas');
     data.find({}).exec(function(err, data){
         if(err){
-            console.log("Error retrieving data");
+             res.json({success: false, msg:'Failed to register user'});
         }else{
-            res.json(data);
+            //  res.json(data);
+             res.json({success: true, msg:'User registered'});
+           
         }
     })
     //res.send("api works");

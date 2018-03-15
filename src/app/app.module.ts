@@ -15,6 +15,9 @@ import { FooterComponent } from './component/footer/footer.component';
 import { MapComponent } from './component/map/map.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { UserdetailService } from './services/userdetail.service';
+import { ValidateService } from './services/validate.service';
+import { DataentryComponent } from './component/dataentry/dataentry.component';
+import { AuthService } from './services/auth.service';
 
 
 @NgModule({
@@ -27,6 +30,7 @@ import { UserdetailService } from './services/userdetail.service';
     FooterComponent,
     MapComponent,
     DashboardComponent,
+    DataentryComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,7 @@ import { UserdetailService } from './services/userdetail.service';
     HttpModule,
     FormsModule
   ],
-  providers: [UserdetailService],
+  providers: [UserdetailService, ValidateService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
