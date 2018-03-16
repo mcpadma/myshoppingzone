@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
+import{ FlashMessagesModule } from 'angular2-flash-messages';
 
 import { AppComponent } from './app.component';
 import { HeaderComponentComponent } from './component/header-component/header-component.component';
@@ -36,7 +37,8 @@ import { AuthService } from './services/auth.service';
     BrowserModule,
     AppRoutingModule,
     HttpModule,
-    FormsModule
+    FormsModule,
+    FlashMessagesModule.forRoot()
   ],
   providers: [UserdetailService, ValidateService, AuthService],
   bootstrap: [AppComponent]
